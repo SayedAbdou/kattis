@@ -1,0 +1,82 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int oneking, oneqween, tworooks, twoknights, twobishops, eightpawns;
+
+    cin >> oneking;
+    cin >> oneqween;
+    cin >> tworooks;
+    cin >> twobishops;
+    cin >> twoknights;
+    cin >> eightpawns;
+
+
+    switch (oneking)
+        {
+            case 0: oneking = 1; break;
+            case 1: oneking = 0; break;
+            default: if (oneking>1)
+                        oneking = 1 - oneking; break;
+        }
+
+
+    switch (oneqween)
+        {
+            case 0: oneqween = 1; break;
+            case 1: oneqween = 0; break;
+            default: if (oneqween>1)
+                        oneqween = 1 - oneqween; break;
+        }
+
+
+    switch (tworooks)
+        {
+            case 0: tworooks = 2; break;
+            case 1: tworooks = 1; break;
+            case 2: tworooks = 0; break;
+            default: if (tworooks>2)
+                        tworooks = 2 - tworooks; break;
+        }
+
+        switch (twobishops)
+        {
+            case 0: twobishops = 2; break;
+            case 1: twobishops = 1; break;
+            case 2: twobishops = 0; break;
+            default: if (twobishops>2)
+                        twobishops = 2 - twobishops; break;
+        }
+
+        switch (twoknights)
+        {
+            case 0: twoknights = 2; break;
+            case 1: twoknights = 1; break;
+            case 2: twoknights = 0; break;
+            default: if (twoknights>2)
+                        twoknights = 2 - twoknights; break;
+        }
+
+
+        switch (eightpawns)
+        {
+            case 0: eightpawns = 8; break;
+            case 1: eightpawns = 7; break;
+            case 2: eightpawns = 6; break;
+            case 3: eightpawns = 5; break;
+            case 4: eightpawns = 4; break;
+            case 5: eightpawns = 3; break;
+            case 6: eightpawns = 2; break;
+            case 7: eightpawns = 1; break;
+            case 8: eightpawns = 0; break;
+            default: if (eightpawns>8)
+                        eightpawns = 8 - eightpawns; break;
+        }
+
+        cout << oneking <<" "<< oneqween <<" "<< tworooks <<" "<< twobishops <<" "<< twoknights <<" "<< eightpawns << endl;
+
+    return 0;
+}
+
