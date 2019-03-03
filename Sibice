@@ -1,0 +1,33 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    int x, num, w, h, result, fits;
+    cin>> num;
+    cin>> w;
+    cin>> h;
+    string str[num];
+
+    fits = (h*h)+(w*w);
+    result = sqrt(fits);
+
+   for(int i=1; i<=num; i++)
+   {
+       cin>> x;
+       if(x<=result)
+            str[i] = "DA";
+       else
+            str[i] = "NE";
+   }
+
+   for(int j=1; j<=num; j++)
+   {
+       cout<<str[j]<<endl;
+   }
+
+
+
+    return 0;
+}
