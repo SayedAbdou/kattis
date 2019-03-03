@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int numerator, denominator, mixfrac, propfrac;
+
+
+    do
+    {
+        cin>> numerator;
+        cin>> denominator;
+        if (denominator==0)
+            return 0;
+        mixfrac = numerator / denominator;
+
+        propfrac = numerator - (mixfrac*denominator) ;
+
+        cout<< mixfrac <<" "<< propfrac << " / "<< denominator <<endl;
+    } while  (numerator!=0 && denominator!=0);
+
+
+    return 0;
+}
