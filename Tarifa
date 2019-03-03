@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x, N, available, counter=0;
+
+    cin >> x;
+    cin >> N;
+    int month[N];
+    for (int i=1; i<=N; i++)
+    {
+        cin >> month[i];
+        if (month[i] <= x)
+        {
+           available = x - month[i];
+           counter += available;
+        }
+        else if (month[i] > x)
+        {
+            available = month[i] - x;
+            counter -= available;
+        }
+    }
+
+    cout << counter + x <<endl;
+
+    return 0;
+}
