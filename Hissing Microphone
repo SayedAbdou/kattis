@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string str;
+    int counter=0;
+    getline(cin, str);
+
+    for (int i=0; i<str.length(); i++)
+    {
+        if (str[i] == str[i+1] && str[i] == 's')
+            counter+=1;
+    }
+
+    if (counter>0)
+        cout<<"hiss"<<endl;
+    else
+        cout<< "no hiss" <<endl;
+
+    return 0;
+}
+
